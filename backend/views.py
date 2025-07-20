@@ -82,3 +82,6 @@ def login(request):
             pass
     return render(request, 'backend/login.html')
 
+
+def dashboard(request):
+    return render(request, 'dashboard/dashboard.html')
