@@ -1,0 +1,496 @@
+{% extends 'base.html' %}
+{% load static %}
+{% comment %}navbar begins{% endcomment %}
+{% block body %}
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  {% comment %}end navbar{% endcomment %}
+  {% comment %}body section begins{% endcomment %}
+  <div class="header-section">
+    <div class="container">
+      <div class="header-text">
+        <h1>X-tesla vest <br /> Community</h1>
+        <p>Invest in the future with the X-tesla vest Community: Where revolutionary ideas meet unparalleled potential</p>
+        <a href=""><button class="btn btn-dark w-100 fw-semibold mt-3">Get Started Today</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="first-section">
+    <div class="container">
+      <p class="text-center mt-5">I’m thrilled to welcome you to the X-tesla vest, a place where we can come together to share ideas, ask questions, and build a better future. Whether you’re an engineer, a scientist, an entrepreneur, an investor or just someone who’s passionate about changing the world, you’re part of our community.</p>
+    </div>
+  </div>
+
+  <div class="second-section">
+    <div class="container pt-5 pb-5">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item position-relative active">
+            <img src="{% static 'image/pnc.jpg' %}" class="d-block w-100 scroll" alt="..." />
+            <div class="carousel-caption position-absolute top-50 start-50 translate-middle">
+              <a href="" class="btn btn-outline-dark px-3 mt-5" data-aos="fade-up">Click Here</a>
+            </div>
+          </div>
+
+          <div class="carousel-item position-relative">
+            <img src="{% static 'image/Tesla.jpg' %}" class="d-block w-100 scroll" alt="..." />
+            <div class="carousel-caption position-absolute top-50 start-50 translate-middle">
+              <a href="" class="btn btn-outline-dark px-3 mt-5" data-aos="fade-up">Click Here</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="third-section scroll-offset" id="About">
+    <div class="container pt-5 pb-5">
+      <h1 class="text-center pb-3">About Us</h1>
+      <div class="line"></div>
+      <p class="pt-4">
+        X-tesla vest is an automotive and energy company. It designs, develops, manufactures, sells, and leases electric vehicles, energy generation, and storage systems. The company produces and sells the Model Y, Model 3, Model X, Model S, Cybertruck, Tesla Semi, and Tesla Roadster vehicles. a
+        <a href="" class="text-danger fw-semibold">Read More…</a>
+      </p>
+      <div class="row pt-4">
+        <div class="col-lg-6 pb-5">
+          <img src="{% static 'image/elonnnn-1.png' %}" class="img-fluid" alt="" />
+        </div>
+
+        <div class="col-lg-6 pb-5">
+          <div class="container py-5">
+            <div class="timeline-wrapper">
+              <div class="timeline-line"></div>
+              <div class="timeline">
+                <!-- Item 1 -->
+                <div class="timeline-item">
+                  <div class="timeline-icon">
+                    <i class="fa-solid fa-users"></i>
+                  </div>
+                  <h5>Invesment Platform</h5>
+                  <p>
+                    Investment platforms offer individuals and businesses the opportunity to grow their wealth and achieve their financial goals through smart investment strategies and diversification.
+                    <span class="highlight">Start Investment …</span>
+                  </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item">
+                  <div class="timeline-icon">
+                    <i class="fa-solid fa-globe"></i>
+                  </div>
+                  <h5>Car Deals</h5>
+                  <p>
+                    Settle into an all-new interior, featuring a wraparound styling that cocoons you inside. Customize ambient lighting to make it your own
+                    <span class="highlight">Buy Tesla Cars…</span>
+                  </p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item">
+                  <div class="timeline-icon">
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h5>Rewards</h5>
+                  <p>I'm focused in rewarding every member of my community positively</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center" data-aos="fade-up">
+            <a href="#" class="btn-green py-3 w-75 text-center">Get Started With Tesla</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="forth-section scroll-offset" id="Companies">
+    <div class="container pt-5 pb-5">
+      <h1 class="text-center pb-3">Our Companies</h1>
+      <div class="line"></div>
+      <div class="row mt-5">
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img src="{% static 'image/spacex.png' %}" class="img-fluid" alt="" />
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img src="{% static 'image/tesla.png' %}" class="img-fluid" alt="" />
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img src="{% static 'image/boring.png' %}" class="img-fluid" alt="" />
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img src="{% static 'image/xai.png' %}" class="img-fluid" alt="" />
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img src="{% static 'image/neuralink.png' %}" class="img-fluid" alt="" />
+        </div>
+        <div class="col-lg-2 d-flex justify-content-center">
+          <img src="{% static 'image/x.png' %}" class="img-fluid" alt="" />
+        </div>
+      </div>
+
+      {% comment %}tesla cars display{% endcomment %}
+
+      <div class="mt-5 pt-5">
+        <h3 class="fw-bold">Tesla Models</h3>
+        <p>Tesla currently offers several different electric car models</p>
+        <div class="pb-5">
+          <h6 class="fw-bold">Model Y</h6>
+          <a href="" class="text-danger">Buy Tesla Today ....</a>
+
+          <div class="d-flex justify-content-center pt-3" data-aos="fade-left">
+            <img src="{% static 'image/red.png' %}" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="pb-5">
+          <h6 class="fw-bold">Model X</h6>
+          <a href="" class="text-danger">Buy Tesla Today ....</a>
+
+          <div class="d-flex justify-content-center pt-3" data-aos="fade-left">
+            <img src="{% static 'image/gray.png' %}" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="pb-5">
+          <h6 class="fw-bold">Model S</h6>
+          <a href="" class="text-danger">Buy Tesla Today ....</a>
+
+          <div class="d-flex justify-content-center pt-3" data-aos="fade-left">
+            <img src="{% static 'image/darkred.png' %}" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="pb-5">
+          <h6 class="fw-bold">Model 3</h6>
+          <a href="" class="text-danger">Buy Tesla Today ....</a>
+
+          <div class="d-flex justify-content-center pt-3" data-aos="fade-left">
+            <img src="{% static 'image/blue.png' %}" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#f9f9f9" fill-opacity="1" d="M0,128L40,112C80,96,160,64,240,42.7C320,21,400,11,480,16C560,21,640,43,720,69.3C800,96,880,128,960,122.7C1040,117,1120,75,1200,74.7C1280,75,1360,117,1400,138.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+  </svg>
+  <div class="fifth-section">
+    {% comment %}pictorial view{% endcomment %}
+    <!-- Investment Plans -->
+
+    <div class="container text-center">
+      <div class="switch-btns">
+        <button class="btn btn-success" onclick="switchTab('distribution')">Distribution</button>
+        <button class="btn btn-secondary" onclick="switchTab('allocation')">Funding Allocation</button>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 piechart">
+          <div id="left-progress"></div>
+        </div>
+
+        <div class="col-md-4 chart-container">
+          <canvas id="donutChart" width="100" height="100"></canvas>
+        </div>
+
+        <div class="col-md-4 piechart">
+          <div id="right-progress"></div>
+        </div>
+      </div>
+
+      <h2 id="Investment" class="investment-title scroll-offset">Investment plans</h2>
+      <p class="text-muted">Experience the diversity of innovation and growth potential by investing in all of our companies.</p>
+
+      <div class="row justify-content-center mt-4">
+        <!-- Basic -->
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <div class="card-title">Basic</div>
+            <div class="card-body">
+              <div class="price">$1000-10000</div>
+              <div class="text-muted mb-3">Weekly</div>
+              <p>
+                <i class="bi bi-check-circle me-2"></i>100% deposit bonus
+              </p>
+              <p>
+                <i class="bi bi-check-circle me-2"></i>20% Referral Bonus
+              </p>
+              <button class="btn click-btn mt-2">Click Here</button>
+              <div class="mt-2 text-muted">Invest Now</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Standard -->
+        <div class="col-md-3 mb-4">
+          <div class="card position-relative overflow-hidden">
+            <div class="card-title">Standard</div>
+            <div class="badge-popular">POPULAR</div>
+            <div class="card-body">
+              <div class="price">$10000-50000</div>
+              <div class="text-muted mb-3">Weekly</div>
+              <p>
+                <i class="bi bi-check-circle me-2"></i>100% Deposit Bonus
+              </p>
+              <p>
+                <i class="bi bi-check-circle me-2"></i>20% Referral Bonus
+              </p>
+              <button class="btn click-btn mt-2">Click Here</button>
+              <div class="mt-2 text-muted">Invest Now</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium -->
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <div class="card-title">Premium</div>
+            <div class="card-body">
+              <div class="price">50000-100000</div>
+              <div class="text-muted mb-3">Weekly</div>
+              <p>
+                <i class="bi bi-check-circle me-2"></i>100% Deposit Bonus
+              </p>
+              <p>
+                <i class="bi bi-check-circle me-2"></i>20% Referral Bonus
+              </p>
+              <button class="btn click-btn mt-2">Click Here</button>
+              <div class="mt-2 text-muted">Invest Now</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Platinum -->
+        <div class="col-md-3 mb-4">
+          <div class="card">
+            <div class="card-title">Platinum</div>
+            <div class="card-body">
+              <div class="price">$100000-500000</div>
+              <div class="text-muted mb-3">Weekly</div>
+              <p>
+                <i class="bi bi-check-circle me-2"></i>150% Deposit Bonus
+              </p>
+              <p>
+                <i class="bi bi-check-circle me-2"></i>50% Referral Bonus
+              </p>
+              <button class="btn click-btn mt-2">Click Here</button>
+              <div class="mt-2 text-muted">Invest Now</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="six-section scroll-offset" id="Contact">
+      <div class="container pt-5 pb-5">
+        <h1 class="pb-3">Contact Us</h1>
+        <div class="lines"></div>
+        <div class="alldiv mt-5">
+          <h1 class="pb-3 contact">Leave Us a Message</h1>
+          <div class="soft-line"></div>
+
+          {% comment %}input text start{% endcomment %}
+
+          <form action="">
+            <div class="mb-3 pt-5">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" />
+            </div>
+
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" />
+            </div>
+
+            <div class="mb-3">
+              <label for="textarea" class="form-label">Message</label>
+              <textarea class="form-control" id="textarea" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="seventh-section scroll-offset" id="Faq">
+      <div class="container faq-header">
+        <h2>FAQ</h2>
+        <div class="line"></div>
+        <p class="subtitle pt-2">Frequently Questions</p>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">What is X-tesla vest investment program?</button></h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">X-tesla vest’s investment program refers to his various investment ventures and companies, including Tesla, SpaceX, The Boring Company, Neuralink, and OpenAI, among others.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">How has X-tesla vest investment program performed?</button></h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">Overall, X-tesla vest’s investment program has been very successful. Tesla, for example, has become one of the most valuable car companies in the world, while SpaceX has disrupted the space industry and is working towards sending humans to Mars. The Boring Company is working to revolutionize transportation, and Neuralink is developing cutting-edge brain-computer interfaces.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">How can I invest in X-tesla vest companies?</button></h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">To invest in the X-tesla vest Community program all you need to do is to create a profile and you will get to see various investment packages laid down by X-tesla vest which you can pick from.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">How long before I get my Return Of Investment?</button></h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">This investment program is designed to enable investors make a withdraw after 7 days of investing.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center pb-5 pt-5">
+            <img src="{% static 'image/faq.png' %}" alt="FAQ Illustration" class="faq-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    {% comment %}body section ends{% endcomment %}
+    {% comment %} {% endcomment %}
+  </div>
+
+  <script>
+    const leftProgressData = {
+      distribution: [
+        { label: 'Advisory board : 25%', color: '#007bff', value: 25 },
+        { label: 'Development: 10%', color: 'purple', value: 10 },
+        { label: 'Bounties: 10%', color: '#3ddab4', value: 10 }
+      ],
+      allocation: [
+        { label: 'Team: 30%', color: '#f39c12', value: 30 },
+        { label: 'Legal: 10%', color: '#9b59b6', value: 10 },
+        { label: 'Marketing: 15%', color: '#1abc9c', value: 15 }
+      ]
+    }
+    
+    const rightProgressData = {
+      distribution: [
+        { label: 'Reserve: 10%', color: '#b2f59f', value: 10 },
+        { label: 'Pre-sale: 20%', color: 'orange', value: 20 },
+        { label: 'Token Sale: 25%', color: '#ff5c83', value: 25 }
+      ],
+      allocation: [
+        { label: 'Platform Dev: 40%', color: '#2ecc71', value: 40 },
+        { label: 'Exchange Listings: 20%', color: '#e67e22', value: 20 },
+        { label: 'Reserve: 10%', color: '#c0392b', value: 10 }
+      ]
+    }
+    
+    const chartData = {
+      distribution: {
+        labels: ['Advisory', 'Development', 'Bounties', 'Reserve', 'Pre-sale', 'Token Sale'],
+        data: [25, 10, 10, 10, 20, 25],
+        colors: ['#007bff', 'purple', '#3ddab4', '#b2f59f', 'orange', '#ff5c83']
+      },
+      allocation: {
+        labels: ['Team', 'Legal', 'Marketing', 'Platform Dev', 'Listings', 'Reserve'],
+        data: [30, 10, 15, 40, 20, 10],
+        colors: ['#f39c12', '#9b59b6', '#1abc9c', '#2ecc71', '#e67e22', '#c0392b']
+      }
+    }
+    
+    const ctx = document.getElementById('donutChart').getContext('2d')
+    let donutChart
+    
+    function renderProgress(id, data) {
+      const container = document.getElementById(id)
+      container.innerHTML = ''
+    
+      data.forEach((item) => {
+        // Create outer div
+        const div = document.createElement('div')
+        div.classList.add('mb-3')
+    
+        // Label
+        const label = document.createElement('div')
+        label.classList.add('progress-label')
+        label.textContent = item.label
+    
+        // Progress wrapper
+        const progress = document.createElement('div')
+        progress.classList.add('progress')
+        progress.style.height = '20px'
+    
+        // Progress bar
+        const bar = document.createElement('div')
+        bar.classList.add('progress-bar')
+        bar.style.width = '0%' // Start at 0 for animation
+        bar.style.backgroundColor = item.color
+    
+        // Append everything
+        progress.appendChild(bar)
+        div.appendChild(label)
+        div.appendChild(progress)
+        container.appendChild(div)
+    
+        // Animate the width
+        setTimeout(() => {
+          bar.style.width = `${item.value}%`
+        }, 100)
+      })
+    }
+    
+    function renderChart(type) {
+      if (donutChart) donutChart.destroy()
+      donutChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: chartData[type].labels,
+          datasets: [
+            {
+              data: chartData[type].data,
+              backgroundColor: chartData[type].colors,
+              borderWidth: 0
+            }
+          ]
+        },
+        options: {
+          cutout: '60%',
+          plugins: {
+            legend: {
+              display: false
+            }
+          }
+        }
+      })
+    }
+    
+    function switchTab(tab) {
+      renderProgress('left-progress', leftProgressData[tab])
+      renderProgress('right-progress', rightProgressData[tab])
+      renderChart(tab)
+    }
+    
+    // Initialize with default tab
+    switchTab('distribution')
+  </script>
+{% endblock %}

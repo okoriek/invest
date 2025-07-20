@@ -1,0 +1,97 @@
+body{
+    overflow-x: hidden;
+}
+
+.bg-img{
+    height: 70vh;
+}
+
+.logo-head{
+    background-color: #434a54;
+    height: 80px;
+    width: 100%;
+    margin: 0;
+    padding-left: 30px; 
+}
+
+.large-bg{
+    background-color: #434a54;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 15px 30px;
+}
+
+.small-bg{
+    background-color: #0a0a0a;
+    height: 100vh;
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.auth-info{
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+}
+
+input{
+    background-color: transparent !important;
+    height: 50px;
+    color: white !important;
+    border: 1px solid #5d87ff !important;
+}
+
+
+/* form design */
+
+/* for horizontal line text */
+
+.text-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.text-divider hr {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
+
+.text-divider span {
+    padding: 0 15px;
+    font-weight: 500;
+    color: #444;
+    white-space: nowrap;
+}
+
+.btn{
+    background-color: #5d87ff !important;
+    color: #ffffff !important;
+}
+
+
+.form-bg{
+    color: #ffffff;
+    width: 80%;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.form-bg p{
+    color: gray;
+}
+.auth-info a, .form-bg a{
+    text-decoration: none;
+}
+
+
+
+

@@ -1,0 +1,442 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+}
+
+.scroll-offset {
+  scroll-margin-top: 70px; /* Adjust this value to match your navbar height */
+}
+
+
+
+body{
+    font-family: "Poppins" !important;
+    overflow-x: hidden !important;
+}
+
+
+.header-section{
+    background-image: url('/static/image/home-bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forth-section{
+    background-color: #ffffff;
+    margin: 0;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+
+.fifth-section {
+    background: #f9f9f9;
+    margin-top: -1px; /* Removes 1px gap between SVG and section */
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+.header-text{
+    width: 25%;
+    font-weight: bold;
+}
+.nav-link{
+    color: black;
+}  
+
+.scroll{
+    height: 50vh !important;
+    object-fit: cover;
+}
+
+.line {
+    width: 130px;  /* Set a width */
+    height: 6px;   /* Line thickness */
+    background: #48dca8; /* Line color */
+    margin: 0 auto; /* Centers horizontally */
+}
+
+.alldiv{
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    height: auto;
+    padding: 50px 30px;
+    border-radius: 10px;
+}
+
+input, textarea{
+    background-color: transparent !important;
+    height: 50px;
+}
+
+.lines {
+    width: 130px;
+    height: 6px;
+    background: #48dca8;
+}
+
+.soft-line{
+    width: 150px;
+    height: 1px;
+    background: #48dca8;
+}
+
+@media screen and (max-width: 760px) {
+    .header-section {
+        height: 50vh;
+    }
+    .header-text{
+        width: 100%;
+        padding-bottom: 30px;
+        font-weight: bold;
+    }
+    .nav-link{
+        color: white !important;
+    }
+    .offcanvas-body{
+        background-color: black;
+    }
+    .offcanvas-header{
+        background-color: black;
+    }
+    .btn-close{
+        background-color: white;
+    }
+
+    .scroll{
+        object-fit: unset;
+    }
+    .timeline-line {
+        height: 80%;
+    }
+}
+
+
+
+
+/* horizonal links */
+
+.timeline-wrapper {
+    position: relative;
+    padding-left: 60px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 2px;
+    height: 100%;
+    background: repeating-linear-gradient(
+    to bottom,
+    #3ddab4,
+    #3ddab4 5px,
+    transparent 5px,
+    transparent 10px
+    );
+    z-index: 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -60px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #3ddab4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.btn-green{
+    background-color: #3ddab4;
+    color: #ffffff;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.timeline h5 {
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.timeline p {
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+.timeline .highlight {
+    color: red;
+    font-style: italic;
+}
+
+/* pictorial information */
+
+.progress {
+    height: 20px;
+    background-color: #e9ecef;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    transition: width 1.5s ease-in-out;
+}
+
+.progress-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.switch-btns {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.switch-btns button {
+    margin: 0 5px;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+@media screen and (min-width: 760px) {
+   .piechart{
+        margin-top: 200px;
+    } 
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 25px;
+    background: linear-gradient(to right, #f4f4f4, #fff);
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.investment-title {
+    font-size: 28px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+.price {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.badge-popular {
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 75px;
+    right: -25px; /* pull it out a bit */
+    padding: 5px 40px;
+    transform: rotate(45deg);
+    transform-origin: top right;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.click-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+}
+.click-btn:hover {
+    background: #333;
+}
+
+/* custom div */
+
+.custom-shape-divider-top-1752892924 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1752892924 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 109vh;
+}
+
+.custom-shape-divider-top-1752892924 .shape-fill {
+    fill: #F8FCFD;
+}
+
+
+/* faq section */
+
+.faq-header {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.faq-header h2 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #222;
+}
+.faq-header .subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    color: #555;
+}
+.faq-img {
+    max-width: 100%;
+    height: auto;
+}
+.accordion-button {
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion-button::after {
+    background-image: none !important; /* Remove Bootstrap default arrow */
+    content: '+';
+    font-size: 25px;
+    color: #ffffff;
+    background-color: #48dca8;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed){
+   color: #48dca8 !important; 
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: '-';
+    transform: rotate(180deg);
+    background-color: #9c9c9c;
+    color: #fff;
+}
+.accordion-body {
+    font-size: 14px;
+    color: #333;
+}
+.accordion-item {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.accordion-button:not(.collapsed) {
+    color: #0ff5d3 !important;
+    background-color: #f1f1f1;
+}
+
+
+
+/* footer css design */
+
+.footer {
+    padding: 60px 20px;
+    background-color: #26323f;
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.join-btn {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 50px #0ff5d3;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0ed8ba;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.footer-bottom {
+    border-top: 1px solid #555;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
