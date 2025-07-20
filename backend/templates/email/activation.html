@@ -1,0 +1,48 @@
+{% autoescape off %}
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Email Verification</title>
+    </head>
+    <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px;">
+      <table width="100%" cellpadding="0" cellspacing="0" style="max-width: 600px; margin: auto; background-color: white; border-radius: 8px;">
+        <tr>
+          <td style="background-color: #000000; padding: 20px; text-align: center; color: white;">
+            <h2 style="margin: 0;">Verify Your Email</h2>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 20px;">
+            <p style="font-size: 16px;">
+              Dear <strong>{{ user }}</strong>,
+            </p>
+            <p style="font-size: 16px;">
+              Thank you for registering with
+              <a href="https://Quantumaiwealth.com" style="color: #000000; text-decoration: none;">Quantumaiwealth</a>. We're excited to have you on board.
+            </p>
+            <p style="font-size: 16px;">To activate your account and complete the sign-up process, please click the button below:</p>
+            <p style="text-align: center; margin: 30px 0;">
+              <a href="http://{{ domain }}{% url 'verification' uidb64=uid token=token %}" style="background-color: #000000; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px;">Activate Account</a>
+            </p>
+            <p style="font-size: 16px;">If you didn’t create an account, you can safely ignore this email.</p>
+            <p style="font-size: 16px;">
+              Best regards,<br />
+              <strong>The Quantumaiwealth Team</strong>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="background-color: #000000; color: white; text-align: center; padding: 20px;">
+            <p style="margin: 0;">
+              <strong>Quantumaiwealth</strong>
+            </p>
+            <p style="margin: 0;">Philip Heymans Allé 15, 2900 Hellerup, Denmark</p>
+            <p style="margin: 0;">&copy; 2025 Quantumaiwealth. All rights reserved.</p>
+          </td>
+        </tr>
+      </table>
+    </body>
+  </html>
+{% endautoescape %}

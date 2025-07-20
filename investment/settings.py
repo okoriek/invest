@@ -1,6 +1,7 @@
 from pathlib import Path
 import dj_database_url
 from dotenv import load_dotenv
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -108,6 +109,17 @@ USE_I18N = True
 USE_TZ = True
 
 
+
+# Email settings
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'mail.saxsvualts.com'
+EMAIL_PORT = 465 # SSL port
+EMAIL_USE_SSL= True   
+EMAIL_HOST_USER = 'test@saxsvualts.com'
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+DEFAULT_FROM_EMAIL = 'Quantumaiwealth <test@saxsvualts.com>'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
@@ -120,3 +132,7 @@ STATIC_ROOT = BASE_DIR / "static"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = ('/dashboard')
+LOGOUT_REDIRECT_URL = ('/')
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True

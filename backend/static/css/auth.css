@@ -2,6 +2,19 @@ body{
     overflow-x: hidden;
 }
 
+.fa-eye,
+.fa-eye-slash {
+    color: rgb(255, 255, 255);
+    z-index: 9;
+}
+
+#eyes1,
+#eyes2 {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
 .bg-img{
     height: 70vh;
 }
@@ -24,7 +37,8 @@ body{
 
 .small-bg{
     background-color: #0a0a0a;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh !important;
     width: 100%;
     margin: 0; 
     padding: 0;
@@ -37,11 +51,18 @@ body{
     justify-content: space-between;
 }
 
-input{
+input, select{
     background-color: transparent !important;
     height: 50px;
     color: white !important;
     border: 1px solid #5d87ff !important;
+    border-radius: 5px;
+    width: 100%;
+}
+
+select option{
+    background-color: #0a0a0a !important;
+    color: white !important;
 }
 
 
