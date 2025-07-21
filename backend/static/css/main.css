@@ -90,13 +90,25 @@ input, textarea{
     background: #48dca8;
 }
 
+
+
 @media screen and (max-width: 760px) {
+    .light{
+        background-color: rgba(255, 255, 255, 0.4);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
     .header-section {
-        height: 50vh;
+        height: 60vh;
+
     }
     .header-text{
         width: 100%;
-        padding-bottom: 30px;
+        padding-bottom: 25px;
+        padding-top: 15px;
         font-weight: bold;
     }
     .nav-link{
