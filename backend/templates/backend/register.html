@@ -54,15 +54,15 @@
 
                   <div class="col-lg-6">
                     <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label">{{ form.last_name.label_tag }}</label>
-                      <div class="input-group mb-3">{{ form.last_name }}</div>
+                      <label for="exampleFormControlInput1" class="form-label">{{ form.first_name.label_tag }}</label>
+                      <div class="input-group mb-3">{{ form.first_name }}</div>
                     </div>
                   </div>
 
                   <div class="col-lg-6">
                     <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label">{{ form.first_name.label_tag }}</label>
-                      <div class="input-group mb-3">{{ form.first_name }}</div>
+                      <label for="exampleFormControlInput1" class="form-label">{{ form.last_name.label_tag }}</label>
+                      <div class="input-group mb-3">{{ form.last_name }}</div>
                     </div>
                   </div>
 
@@ -116,8 +116,9 @@
                     <label class="form-check-label" for="accept">i agree with terms & conditions</label>
                   </div>
                 </div>
+
+                <button type="submit" class="btn mt-2 py-2 w-100" id="reg_submit">Submit</button>
               </form>
-              <button type="submit" class="btn mt-2 py-2 w-100" id="reg_submit">Submit</button>
               <p class="text-center pt-5">
                 Already have an Account? <a href="{% url 'backend:login' %}">Sign In</a>
               </p>
