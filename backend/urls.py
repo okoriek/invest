@@ -12,7 +12,7 @@ from django.contrib.auth.views import (
 urlpatterns = [
     path('', views.home, name='home'),
     path('logout/', LogoutView.as_view(), name='logout'),
-    path('signin/', views.login, name='login'),
+    path('signin/', views.login_user, name='login'),
     path('signup/', views.register, name='register'),
     path('dashboard/', views.dashboard, name='dashboard'),
 

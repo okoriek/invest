@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.urls import reverse
 from django.contrib.auth import authenticate, login
 from django.template.loader import render_to_string
 from . models import *
@@ -55,31 +56,29 @@ def register(request):
     return render(request, 'backend/register.html', args)
 
 
-def login(request):
+def login_user(request):
     if request.method == 'POST':
         email =  request.POST.get('email')
         password = request.POST.get('password')
+        
+        active =  User.objects.get(email=email)
+        if active.is_active == True:
+            user = authenticate(request, email=email, password=password)
 
-        try:
-            active =  User.objects.get(email=email)
-            if active.is_active == True:
-                user = authenticate(request, email=email, password=password)
-
-                if user is not None:
-                    login(request, user)
-                    next_url = request.POST.get('next', request.GET.get('next'))
-            
-                    if next_url:
-                        return redirect(next_url)
-                    else:
-                        return redirect('dashboard')            
+            if user is not None:
+                login(request, user)
+                next_url = request.POST.get('next', request.GET.get('next'))
+        
+                if next_url:
+                    return redirect(next_url)
                 else:
-                    messages.error(request, 'Invalid email or password.')
+                    print('loging')
+                    return redirect(reverse('backend:dashboard'))            
             else:
-                messages.error(request, 'Your account is currently inactive, Please contact support for assistance.')
-                return redirect('login')
-        except:
-            pass
+                messages.error(request, 'Invalid email or password.')
+        else:
+            messages.error(request, 'Your account is currently inactive, Please contact support for assistance.')
+            return redirect(reverse('backend:login'))
     return render(request, 'backend/login.html')
 
 

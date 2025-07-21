@@ -27,6 +27,15 @@ body{
     padding-left: 30px; 
 }
 
+li, ul{
+    list-style: none;
+    text-align: center;
+}
+
+.errorlist{
+    padding-left: 0;
+}
+
 .large-bg{
     background-color: #434a54;
     height: 100%;
